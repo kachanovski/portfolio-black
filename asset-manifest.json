@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio-black/static/css/main.d95df776.chunk.css",
+    "main.js": "/portfolio-black/static/js/main.4ecc3c78.chunk.js",
+    "main.js.map": "/portfolio-black/static/js/main.4ecc3c78.chunk.js.map",
+    "runtime-main.js": "/portfolio-black/static/js/runtime-main.937e4dd7.js",
+    "runtime-main.js.map": "/portfolio-black/static/js/runtime-main.937e4dd7.js.map",
+    "static/js/2.6542e7fa.chunk.js": "/portfolio-black/static/js/2.6542e7fa.chunk.js",
+    "static/js/2.6542e7fa.chunk.js.map": "/portfolio-black/static/js/2.6542e7fa.chunk.js.map",
+    "static/js/3.88718f3b.chunk.js": "/portfolio-black/static/js/3.88718f3b.chunk.js",
+    "static/js/3.88718f3b.chunk.js.map": "/portfolio-black/static/js/3.88718f3b.chunk.js.map",
+    "index.html": "/portfolio-black/index.html",
+    "static/css/main.d95df776.chunk.css.map": "/portfolio-black/static/css/main.d95df776.chunk.css.map",
+    "static/js/2.6542e7fa.chunk.js.LICENSE.txt": "/portfolio-black/static/js/2.6542e7fa.chunk.js.LICENSE.txt",
+    "static/media/github-11-512.705e116f.png": "/portfolio-black/static/media/github-11-512.705e116f.png",
+    "static/media/html.c44d1801.png": "/portfolio-black/static/media/html.c44d1801.png",
+    "static/media/keyboard.b47c48de.jpg": "/portfolio-black/static/media/keyboard.b47c48de.jpg",
+    "static/media/linkedin-6-512.1f14a8f9.png": "/portfolio-black/static/media/linkedin-6-512.1f14a8f9.png",
+    "static/media/logo.2fe654ba.png": "/portfolio-black/static/media/logo.2fe654ba.png",
+    "static/media/my_face.03f136a3.png": "/portfolio-black/static/media/my_face.03f136a3.png",
+    "static/media/phptp_about.a1872298.jpg": "/portfolio-black/static/media/phptp_about.a1872298.jpg",
+    "static/media/portfolio.4ec796ad.jpg": "/portfolio-black/static/media/portfolio.4ec796ad.jpg",
+    "static/media/react.9672ac73.png": "/portfolio-black/static/media/react.9672ac73.png",
+    "static/media/redux.dba28445.png": "/portfolio-black/static/media/redux.dba28445.png",
+    "static/media/social.de86a0b5.jpg": "/portfolio-black/static/media/social.de86a0b5.jpg",
+    "static/media/todo.13712817.png": "/portfolio-black/static/media/todo.13712817.png",
+    "static/media/weather.070e504d.jpg": "/portfolio-black/static/media/weather.070e504d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.937e4dd7.js",
+    "static/js/2.6542e7fa.chunk.js",
+    "static/css/main.d95df776.chunk.css",
+    "static/js/main.4ecc3c78.chunk.js"
+  ]
+}
