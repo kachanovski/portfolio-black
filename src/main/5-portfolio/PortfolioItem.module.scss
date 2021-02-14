@@ -1,0 +1,116 @@
+.portfolioItem {
+  margin: 20px 20px;
+
+  .container {
+
+    .item {
+      width: 300px;
+      height: 300px;
+      background-color: brown;
+      position: relative;
+
+      .item_img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+
+      .item_info {
+        visibility: hidden;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #202020;
+        position: absolute;
+        z-index: 1;
+        transform: scale(.1);
+        padding: 15px;
+        transition: all 0.3s linear;
+
+        .item_title {
+          height: 15%;
+          display: flex;
+          justify-content: flex-end;
+          font-size: 30px;
+        }
+
+
+        .item_technology {
+          height: 20%;
+          display: flex;
+          justify-content: flex-end;
+          color: #2e9eff;
+          font-family: "Raleway", sans-serif;
+          font-weight: 100;
+        }
+
+        .item_description {
+          height: 40%;
+          font-family: "Raleway", sans-serif;
+        }
+
+        .button_wrap {
+          height: 20%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          font-family: "Raleway", sans-serif;
+          font-weight: 300;
+
+          .button {
+            font-weight: 300;
+            color: #ffffff;
+            background-color: transparent;
+            text-decoration: none;
+            text-align: center;
+            height: 45px;
+            line-height: 47px;
+            font-size: 18px;
+            border: 1px solid #888888;
+            padding: 0 24px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            display: inline-block;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all .4s;
+          }
+
+          .button:hover {
+            background-color: #888888;
+          }
+        }
+
+      }
+
+      @media (max-width: 320px) {
+        .item_info {
+          left: 4%;
+          margin: 0;
+          padding: 0;
+          width: 260px;
+          height: 280px;
+        }
+      }
+    }
+
+    @media (max-width: 320px) {
+      .item {
+        width: 280px;
+        height: 280px;
+      }
+    }
+
+    .item:hover {
+      .item_info {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1.15)
+      }
+    }
+
+
+  }
+
+}

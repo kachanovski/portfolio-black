@@ -1,0 +1,35 @@
+.footer {
+  padding: 25px;
+  background-color: #2a2a2a;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .footer_title {
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 1px;
+    }
+
+    .socialLink {
+      display: flex;
+
+      .socialIcon {
+        margin: 0 3px;
+
+        width: 20px;
+        height: 20px;
+
+        .icon {
+          height: 100%;
+          width: 100%;
+        }
+
+      }
+    }
+
+  }
+}
