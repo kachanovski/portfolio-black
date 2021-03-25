@@ -1,9 +1,31 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import s from './Contacts.module.scss'
+import {Link} from "react-scroll";
+import axios from "axios";
 
 export const Contacts = () => {
+
+    const [name, setName] = useState<string>('')
+    const [lastName, setLastName] = useState<string>('')
+    const [email, setEmail] = useState<string>('')
+    const [subject, setSubject] = useState<string>('')
+    const [message, setMessage] = useState<string>('')
+    const [error, setError] = useState<string>('')
+
+    useEffect(() => {
+    }, [])
+
+    const sendMail = async () => {
+        if (name === '' || email === '' || subject === '' || message === '' || lastName === '') {
+            setError('All fields are required.')
+        } else {
+            await axios.post('https://portfolio-send-mail.herokuapp.com/send-mail',{name, lastName, email, subject, message} )
+            setError('')
+        }
+    }
+
     return (
-        <div className={s.contacts}>
+        <div id={'contacts'} className={s.contacts}>
             <div className={s.container}>
                 <div className={s.contacts_wrap}>
                     <div className={s.myContacts}>
@@ -37,12 +59,22 @@ export const Contacts = () => {
                         </div>
 
                         <form className={s.form}>
-                            <input className={s.form_input} placeholder={'your name'}/>
-                            <input className={s.form_input} placeholder={'your last name'}/>
-                            <input className={s.form_input} placeholder={'your email'}/>
-                            <input className={s.form_input} placeholder={'subject'}/>
-                            <textarea className={s.form_textarea} placeholder={'enter you message'}/>
-                            <button className={s.button}>SUBMIT</button>
+                            <input value={name} onChange={(e) => setName(e.currentTarget.value)}
+                                   className={s.form_input} placeholder={'your name'}/>
+                            <input value={lastName} onChange={(e) => setLastName(e.currentTarget.value)}
+                                   className={s.form_input} placeholder={'your last name'}/>
+                            <input value={email} onChange={(e) => setEmail(e.currentTarget.value)}
+                                   className={s.form_input} placeholder={'your email'}/>
+                            <input value={subject} onChange={(e) => setSubject(e.currentTarget.value)}
+                                   className={s.form_input} placeholder={'subject'}/>
+                            <textarea value={message} onChange={(e) => setMessage(e.currentTarget.value)}
+                                      className={s.form_textarea} placeholder={'enter you message'}/>
+                            <span className={s.error}>{error}</span>
+                            <Link to="contacts" spy={true} smooth={true}
+                                  duration={500}>
+                                <button onClick={sendMail} type={'submit'} className={s.button}>SUBMIT</button>
+                            </Link>
+
                         </form>
                     </div>
                 </div>

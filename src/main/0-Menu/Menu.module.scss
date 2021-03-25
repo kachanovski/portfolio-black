@@ -14,7 +14,9 @@
       padding: 30px 20px 0 20px;
       position: fixed;
       right: 80px;
+      overflow-y: auto;
       top: 80px;
+      bottom: 20px;
       border: 1px solid #888888;
       border-radius: 15px;
       background-color: #181818;
@@ -40,7 +42,6 @@
       }
 
       .nav_page {
-        background-color: #2e9eff;
         width: 300px;
         height: 128px;
         margin-bottom: 30px;
@@ -49,16 +50,28 @@
         .page_name {
           height: 100%;
           font-size: 40px;
-          visibility: hidden;
+
           display: flex;
           justify-content: center;
           align-items: center;
+
+          .menuItem_image{
+            position: absolute;
+            width: 250px;
+            height: 128px;
+          }
+
+          .menuItem_link{
+            visibility: hidden;
+            z-index: 2;
+          }
+
         }
 
       }
 
       .nav_page:hover {
-        .page_name {
+        .menuItem_link {
           visibility: visible;
         }
       }

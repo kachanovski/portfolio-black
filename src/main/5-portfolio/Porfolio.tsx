@@ -42,7 +42,7 @@ const PortfolioItemsArray = [
 
 export const Portfolio = () => {
     return (
-        <div className={s.portfolio}>
+        <div id={'portfolio'} className={s.portfolio}>
             <div className={s.container}>
                 <div className={s.title}>
                     <div className={s.title_large}>

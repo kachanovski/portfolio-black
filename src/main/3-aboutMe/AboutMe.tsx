@@ -1,10 +1,12 @@
 import React from "react";
 import s from './About.module.scss'
 import photo_about from './../../images/phptp_about.jpg'
+//@ts-ignore
+import cv from '../../accets/kachanovski_cv_react.pdf'
 
 export const About = () => {
     return (
-        <div className={s.about}>
+        <div id={'about'} className={s.about}>
             <div className={s.container}>
 
                 <div className={s.photo_wrap}>
@@ -22,7 +24,7 @@ export const About = () => {
                         repudiandae saepe unde voluptate voluptatibus? Adipisci consectetur culpa dolor dolorem,
                         excepturi maxime nemo officiis omnis reprehenderit repudiandae?
                     </div>
-                    <a href={'#'} className={s.button}>DOWNLOAD CV</a>
+                    <a href={cv} download className={s.button}>DOWNLOAD CV</a>
                 </div>
             </div>
             <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5" className={s.svg}>

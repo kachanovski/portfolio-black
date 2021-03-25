@@ -50,7 +50,7 @@ const ServiceArray = [
 export const Service = () => {
 
     return (
-        <div className={s.service}>
+        <div id={'service'} className={s.service}>
             <div className={s.container}>
                 <div className={s.title}>
                     <div className={s.title_smallText}>

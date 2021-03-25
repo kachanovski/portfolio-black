@@ -4,6 +4,7 @@ import face from './../../images/my_face.png'
 import telegram from '../../images/icons/social/telegram-512.png'
 import github from '../../images/icons/social/github-11-512.png'
 import linkIn from '../../images/icons/social/linkedin-6-512.png'
+import {Link} from "react-scroll";
 
 export const Home = () => {
     return (
@@ -16,14 +17,15 @@ export const Home = () => {
                 <div className={s.textWrapper}>
                     <div className={s.textWrapper_name}>I AM ALEXANDER KACHANOVSKI</div>
                     <div className={s.textWrap_specialty}>FRONTEND REACT DEVELOPER</div>
-                    <a href={'#'} className={s.button}>CONTACT ME</a>
+                    <Link className={s.button} to="contacts" spy={true} smooth={true}
+                          duration={500}>CONTACT ME</Link>
                 </div>
                 <div className={s.slideImage}>
                     <img className={s.dropLeft} src={face} alt={'my_face'}/>
                 </div>
                 <div className={s.socialLink}>
                     <div className={s.socialIcon}>
-                        <a href={'https://t.me/shura_13'}>
+                        <a href={'https://t.me/kachanovski_03'}>
                             <img className={s.icon} alt={'soc icon'} src={telegram}/>
                         </a>
                     </div>
